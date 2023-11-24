@@ -1,0 +1,84 @@
+body{
+  margin: 0;
+  width: 1488px;
+  overflow-x: hidden;
+
+}
+
+header{
+  width: 1488px;
+  height: 150px;
+  background-color: #000;
+}
+
+#rus{
+  position: relative;
+  float: right;
+  right: 100px;
+  top:-65px;
+}
+
+.nav{
+  width: 1288px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 0 auto;
+  padding-top:20px ;
+}
+
+a{
+  color: #fff;
+  text-decoration: none;
+  font-family: 'Trade Winds';
+  font-size: 25px;
+}
+ /*Секция с видео*/
+section{
+  width: 1488px;
+  height: 750px;
+  background-image: url('ffon.png');
+}
+
+.group{
+  width: 1288px;
+  display: flex;
+  justify-content: flex-end;
+  margin: 0 auto;
+  flex-direction: row-reverse;
+  position: relative;
+}
+
+
+
+#gang_txt_1{
+  color: #FFF;
+  font-family: 'Trade Winds';
+  font-size: 35px;
+  float: left;
+  line-height: 43.5px;
+  padding-left: 32px;
+}
+
+#gang_txt_2{
+  color: #FFF;
+  font-family: 'Trade Winds';
+  font-size: 35px;
+  float: right;
+  text-align: right;
+  line-height: 46.5px;
+}
+
+/*футер*/
+.images{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding-top: 45px;;
+}
+
+footer{
+  width: 1488px;
+  height: 150px;
+  background-color: #000;
+}

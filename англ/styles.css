@@ -1,0 +1,127 @@
+body{
+  margin: 0;
+  width: 1488px;
+  overflow-x: hidden;
+
+}
+/*Лоадер*/
+.loader-wrapper {
+  background-color: black;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%);
+  z-index: 9999;
+  background-color: #000;
+  width: 100%;
+  height: 170%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.loader{
+  font-size: 48px;
+  font-weight: bold;
+  letter-spacing: 2px;
+  font-family: 'Kanit', sans-serif;
+  color: #000;
+  animation: smokeOut 3s ease-in-out infinite alternate;
+  text-shadow: 0 0 1px white;
+  text-align: center;
+}
+.loader:before {
+  content: "Tackleberrry Production Presents";
+  color: #fff;
+}
+
+@keyframes smokeOut {
+  100% {
+    opacity: 0.08;
+    filter: blur(5px);
+    letter-spacing: 4px;
+  }
+}
+
+/*Заголовок*/
+header{
+  width: 1488px;
+  height: 150px;
+  background-color: #000;
+}
+
+#rus{
+  position: relative;
+  float: right;
+  right: 100px;
+  top:-65px;
+}
+
+
+.nav{
+  width: 1288px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 0 auto;
+  padding-top:20px ;
+}
+
+a{
+  color: #fff;
+  text-decoration: none;
+  font-family: 'Trade Winds';
+  font-size: 25px;
+}
+ /*Секция с фото*/
+section{
+  width: 1488px;
+  height: 750px;
+  background-image: url('ffon.png');
+}
+
+.group{
+  width: 1288px;
+  display: flex;
+  justify-content: flex-end;
+  margin: 0 auto;
+  flex-direction: row-reverse;
+  position: relative;
+}
+
+.text{
+  text-align: right;
+}
+
+#gang_txt_1{
+  color: #FFF;
+  font-family: 'Trade Winds';
+  font-size: 45px;
+  position: absolute;
+  left: 500px;
+  text-align: left;
+}
+
+#gang_txt_2{
+  color: #FFF;
+  font-family: 'Trade Winds';
+  font-size: 45px;
+  position: relative;
+  left: -310px;
+  white-space: nowrap;
+}
+
+/*футер*/
+.images{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding-top: 45px;;
+}
+
+footer{
+  width: 1488px;
+  height: 150px;
+  background-color: #000;
+}

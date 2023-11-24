@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tackleberrry Gang</title>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Alumni+Sans:wght@800&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header>
+    <div class="nav">
+      <a href="../обо мне/index.html">Обо мне</a>
+      <a href="../русс/index.html"><img id="img" src="logo.png" width="219px" height="87px"></a>
+      <a href="index.html">Фотоальбом</a>
+    </div>
+    <a id="eng" href="../photos/index.html">eng</a>
+  </header>
+
+  <section>
+
+    <div class="slider">
+      <img src="1.png" alt="Изображение 1" class="slide">
+      <img src="2.jpg" alt="Изображение 2" class="slide">
+      <img src="3.png" alt="Изображение 3" class="slide">
+      <img src="4.png" alt="Изображение 4" class="slide">
+      <img src="5.png" alt="Изображение 5" class="slide">
+      <img src="6.png" alt="Изображение 6" class="slide">
+      <img src="7.png" alt="Изображение 7" class="slide">
+      <img src="8.png" alt="Изображение 8" class="slide">
+      <img src="9.png" alt="Изображение 9" class="slide">
+      <img src="10.png" alt="Изображение 10" class="slide">
+      <img src="11.png" alt="Изображение 11" class="slide">
+    </div>
+
+  </section>
+
+  <footer>
+    <div class="images">
+      <a href="https://t.me/Tackleberrry" target="_blank"><img src="tg.png" width="45px" height="45px"></a>
+      <a href="https://www.instagram.com/nadya_2_9/" target="_blank"><img src="insta.png" width="40px" height="40px"></a>
+      <a href="https://vk.com/id310697268" target="_blank"><img src="vk.png" width="40px" height="40px"></a>
+    </div>
+  </footer>
+
+  <script>
+let currentIndex = 0;
+const slides = document.querySelectorAll('.slide');
+const slideInterval = 3000;
+ 
+function changeSlide() {
+  slides[currentIndex].style.opacity = 0;
+  currentIndex = (currentIndex + 1) % slides.length;
+  slides[currentIndex].style.opacity = 1;
+}
+ 
+setInterval(changeSlide, slideInterval);
+  </script>
+</body>
+</html>

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tackleberrry Gang</title>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Alumni+Sans:wght@800&display=swap" rel="stylesheet">
+</head>
+<body>
+<!-- Добавляем лоадер здесь -->
+<div class="loader-wrapper">
+  <div class="loader"></div>
+</div>
+
+  <header>
+    <div class="nav">
+      <a href="обо мне/index.html">Обо мне</a>
+      <a  href="index.html"><img id="img" src="logo.png" width="219px" height="87px"></a>
+      <a href="фотографии/index.html">Фотоальбом</a>
+    </div>
+    <a id="eng" href="../англ/index.html">eng</a>
+  </header>
+
+  <section>
+    <div class="group">
+      <div class="text">
+        <a id="gang_txt_1">Её авторитет был<br> огромен...</a><br><br><br><br><br><br><br><br><br><br>
+        <a id="gang_txt_2">Вся местная братва обращалась к<br> ней не иначе,<br>
+          как на “Вы”,<br>
+           уважительно<br>
+          называя<br>
+           Tackleberrry.</a>
+      </div>
+      <img src="gang.png" width="915px" height="700px">  
+    </div>
+  </section>
+
+  <footer>
+    <div class="images">
+      <a href="https://t.me/Tackleberrry" target="_blank"><img src="tg.png" width="45px" height="45px"></a>
+      <a href="https://www.instagram.com/nadya_2_9/" target="_blank"><img src="insta.png" width="40px" height="40px"></a>
+      <a href="https://vk.com/id310697268" target="_blank"><img src="vk.png" width="40px" height="40px"></a>
+    </div>
+  </footer>
+
+  
+  <script>
+    // Ждем 5 секунд перед скрытием лоадера
+    window.addEventListener("load", function () {
+      const loaderWrapper = document.querySelector(".loader-wrapper");
+      setTimeout(function() {
+        loaderWrapper.style.display = "none"; // Скрываем лоадер после 10 секунд
+      }, 5000); // 10000 миллисекунд = 10 секунд
+    });
+  </script>
+</body>
+</html>

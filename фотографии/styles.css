@@ -1,0 +1,78 @@
+body{
+  margin: 0;
+  width: 1488px;
+  overflow-x: hidden;
+
+}
+
+/*Заголовок*/
+header{
+  width: 1488px;
+  height: 150px;
+  background-color: #000;
+}
+
+
+#eng{
+  position: relative;
+  float: right;
+  right: 100px;
+  top:-69px;
+}
+
+.nav{
+  width: 1288px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 0 auto;
+  padding-top:20px ;
+}
+
+a{
+  color: #fff;
+  text-decoration: none;
+  font-family: 'Alumni Sans';
+  font-size: 35px;
+}
+ /*Секция с фото*/
+section{
+  width: 1488px;
+  height: 750px;
+  background-image: url('ffon.png');
+}
+
+.slider {
+  position: relative;
+  width: 100%;
+  height: 700px;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+}
+ 
+.slide {
+  position: absolute;
+  width: 1288px;
+  height: 700px;
+  opacity: 0;
+  transition: opacity 1s;
+}
+ 
+.slide:first-child {
+  opacity: 1;
+}
+
+/*футер*/
+.images{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding-top: 45px;;
+}
+
+footer{
+  width: 1488px;
+  height: 150px;
+  background-color: #000;
+}
